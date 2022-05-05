@@ -1,0 +1,3 @@
+export const USER_ACTION_TYPES = {
+    GET_COLLECTION: 'GET_COLLECTION'
+}

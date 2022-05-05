@@ -1,8 +1,9 @@
 import './header.style.scss'
 import {Link} from 'react-router-dom'
-import {ReactComponent as Logo} from '../../assets/crwns.svg' 
+import {ReactComponent as Logo} from '../../assets/crwns.svg'
+import CartIcon from '../cart-icon/cart-icon.component'
 
-const Header = () =>{
+const Header = () => {
     return(
         <>
             <div className='header'>
@@ -11,24 +12,25 @@ const Header = () =>{
                     className='logo-container'
                     to='/'>
                     <Logo className='logo' />
-                </Link>
+                </Link> 
                 {/** Options */}
                 <div className='options'>
-                    <Link
+                    <Link 
                         className='option'
                         to='/shop'>
                         SHOP
                     </Link>
-                    <Link
+                    <Link 
                         className='option'
                         to='/signin'>
                         SIGN IN
                     </Link>
-                    <Link
+                    <Link 
                         className='option'
                         to='/contact'>
                         CONTACT
                     </Link>
+                    <CartIcon />
                 </div>
             </div>
         </>
